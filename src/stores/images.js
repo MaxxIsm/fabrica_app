@@ -18,13 +18,20 @@ export const useImagesStore = defineStore("images", {
     },
 
     setFavoriteImages() {
-      this.favoriteImages = JSON.parse(localStorage.getItem("favoriteImages"));
+      if (JSON.parse(localStorage.getItem("favoriteImages"))) {
+        this.favoriteImages = JSON.parse(
+          localStorage.getItem("favoriteImages")
+        );
+      }
     },
 
     addToFavorite(image) {
-      const hasImage = this.favoriteImages.some(function (item) {
-        return item.id === image.id;
-      });
+      let hasImage = false;
+      if (this.favoriteImages.length > 0) {
+        hasImage = this.favoriteImages.some(function (item) {
+          return item.id === image.id;
+        });
+      }
 
       if (!hasImage) {
         this.favoriteImages.push(image);
