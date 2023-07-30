@@ -3,7 +3,7 @@ import { useImagesStore } from "@/stores/images.js";
 
 const images = useImagesStore();
 
-// images.search();
+images.search();
 </script>
 
 <template>
