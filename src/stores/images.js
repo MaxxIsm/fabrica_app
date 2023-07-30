@@ -62,7 +62,7 @@ export const useImagesStore = defineStore("images", {
 
       try {
         let response = await axios.get(
-          `https://api.unsplash.com/photos/random?count=8&client_id=fzuOmwSLFvjqFRUkH6UIzRAI2qEdJ6RcwA4e5DtwqVg`
+          `https://api.unsplash.com/photos/random?count=8&client_id=OA4XiFm0ko0ydm0Op3o7ZZLeBkTP1MSaDWR4Aj3hAFo`
         );
 
         this.images = response.data;
@@ -77,7 +77,7 @@ export const useImagesStore = defineStore("images", {
 
       try {
         let response = await axios.get(
-          `https://api.unsplash.com/search/photos?per_page=8&query=${this.searchTerm}&client_id=fzuOmwSLFvjqFRUkH6UIzRAI2qEdJ6RcwA4e5DtwqVg`
+          `https://api.unsplash.com/search/photos?per_page=8&query=${this.searchTerm}&client_id=OA4XiFm0ko0ydm0Op3o7ZZLeBkTP1MSaDWR4Aj3hAFo`
         );
 
         this.images = response.data.results;
