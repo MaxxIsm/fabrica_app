@@ -1,10 +1,4 @@
-<script setup>
-import { useImagesStore } from "@/stores/images.js";
-import searchBg from "@/assets/images/searchBg.jpg";
-import router from "@/router";
-
-const images = useImagesStore();
-</script>
+<script></script>
 
 <template>
   <header style="background-color: #000">
@@ -182,7 +176,7 @@ const images = useImagesStore();
   align-items: center;
   justify-content: center;
   height: 150px;
-  background: url("@/assets/images/searchBurger.jpg");
+  background: url("@/assets/images/searchBg.jpg");
 }
 
 .search-button {

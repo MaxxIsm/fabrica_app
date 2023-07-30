@@ -10,7 +10,7 @@ const route = useRoute();
 const images = useImagesStore();
 
 onBeforeMount(() => {
-  images.setFavoriteImages()
+  images.setFavoriteImages();
 });
 </script>
 
@@ -18,6 +18,6 @@ onBeforeMount(() => {
   <MainHeader v-if="route.name === 'home'" />
 
   <SecondaryHeader v-else />
-  
+
   <RouterView />
 </template>
