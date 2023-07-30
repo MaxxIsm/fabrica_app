@@ -18,7 +18,7 @@ export const useImagesStore = defineStore("images", {
       this.imageId = imageId;
     },
 
-    setFavoriteImages(images) {
+    setFavoriteImages() {
       this.favoriteImages = JSON.parse(localStorage.getItem("favoriteImages"));
     },
 
