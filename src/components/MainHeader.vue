@@ -123,8 +123,15 @@ const images = useImagesStore();
             />
           </svg>
         </RouterLink>
-        <RouterLink :to="{ name: 'favorites' }">
-          <div style="display: flex; align-items: center; gap: 10px">
+        <RouterLink :to="{ name: 'favorites' }" style="text-decoration: none">
+          <div
+            style="
+              display: flex;
+              align-items: center;
+
+              gap: 10px;
+            "
+          >
             <svg
               width="23"
               height="22"

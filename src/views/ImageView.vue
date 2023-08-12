@@ -6,10 +6,10 @@ import { onMounted } from "vue";
 const route = useRoute();
 const images = useImagesStore();
 
-images.setImageId(route.params.imageId)
+images.setImageId(route.params.imageId);
 
 function downloadImage() {
-  window.open(images.image.links.download, '_blank');
+  window.open(images.image.links.download, "_blank");
 }
 
 onMounted(() => {
@@ -19,6 +19,7 @@ onMounted(() => {
 
 <template>
   <div
+    class="main"
     style="position: relative; padding: 0 20px"
     v-if="Object.keys(images.image).length > 0"
   >
@@ -95,7 +96,10 @@ onMounted(() => {
             </svg>
           </button>
 
-          <button class="button button-download active-bg" @click="downloadImage">
+          <button
+            class="button button-download active-bg"
+            @click="downloadImage"
+          >
             <svg
               width="26"
               height="23"
@@ -113,8 +117,8 @@ onMounted(() => {
               />
             </svg>
 
-            <span style="font-size: 20px; font-weight: 400" class="label"
-              >Download</span
+            <span style="font-size: 18px; font-weight: 400" class="label"
+              >DOWNLOAD</span
             >
           </button>
         </div>
@@ -132,6 +136,13 @@ onMounted(() => {
 </template>
 
 <style scoped>
+.main {
+  font-family: "Roboto", sans-serif;
+}
+
+button {
+  font-family: "Roboto", sans-serif;
+}
 .image-info {
   display: flex;
   align-items: center;

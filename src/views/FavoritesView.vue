@@ -22,6 +22,11 @@ const images = useImagesStore();
 </template>
 
 <style scoped>
+h1 {
+  font-family: "Roboto", sans-serif;
+  margin-top: 10px;
+}
+
 .image-container {
   margin: 0 auto;
   max-width: 1240px;

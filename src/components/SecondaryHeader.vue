@@ -118,10 +118,16 @@
           </svg>
         </RouterLink>
 
-        <div style="display: flex; align-items: center; gap: 38px">
+        <div style="display: flex; align-items: center; gap: 38px" class="main">
           <RouterLink
             :to="{ name: 'home' }"
-            style="display: flex; align-items: center; gap: 10px; color: #fff"
+            style="
+              display: flex;
+              align-items: center;
+              gap: 10px;
+              text-decoration: none;
+              color: #fff;
+            "
           >
             <svg
               width="23"
@@ -147,6 +153,7 @@
               gap: 10px;
               background: none;
               color: #fff;
+              text-decoration: none;
             "
           >
             <svg

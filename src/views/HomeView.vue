@@ -23,6 +23,7 @@ images.search();
 
 <style scoped>
 .image-container {
+  font-family: "Roboto", sans-serif;
   margin: 0 auto;
   max-width: 1240px;
   display: grid;
